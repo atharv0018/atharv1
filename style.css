@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     display: flex;
@@ -6,34 +7,44 @@ body {
     height: 100vh;
     margin: 0;
     background-color: #f4f4f4;
+    background-image: url('https://www.pcworld.com/wp-content/uploads/2024/03/shutterstock_2268386621.jpg?quality=50&strip=all');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
+/* Centering the login form */
 .container {
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 30px;
     width: 400px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-h2, h3 {
-    text-align: center;
-}
-
+/* Form container */
 .form-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
+/* Input Fields */
 input {
     margin: 5px 0;
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 60%;  /* Take up 60% of the width for inputs */
+    width: 90%;
 }
 
+/* Buttons */
 button {
     padding: 10px;
     font-size: 16px;
@@ -42,13 +53,24 @@ button {
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    width: 100%;  /* Make button take full width */
+    width: 100%;
+    margin-top: 10px;
 }
 
 button:hover {
     background-color: #45a049;
 }
 
+/* Logout button */
+button.logout {
+    background-color: #f44336;
+}
+
+button.logout:hover {
+    background-color: #d32f2f;
+}
+
+/* Links */
 p {
     text-align: center;
 }
@@ -58,81 +80,20 @@ a {
     text-decoration: none;
 }
 
-/* Dashboard - Saved Passwords */
-#savedPasswords {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+/* Dashboard Styles */
+.dashboard {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    width: 450px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .password-entry {
-    background-color: #f9f9f9;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Align labels and inputs inline */
-.password-entry .row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;  /* Vertically center the content */
-    margin: 10px 0;
-}
-
-.password-entry .row label {
-    font-weight: bold;
-    color: #4CAF50;
-    width: 35%;  /* Make label take up 35% of the row width */
-    text-align: left;  /* Align text to the left */
-}
-
-.password-entry .row input {
-    font-size: 14px;
-    width: 60%;  /* Input takes up 60% of the row */
-}
-
-.password-entry hr {
-    border: 1px solid #ddd;
-    margin-top: 10px;
-}
-
-/* Logout button styling */
-button {
+    background: #ffffff;
     padding: 10px;
-    font-size: 16px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    cursor: pointer;
     border-radius: 5px;
-    width: 100%;
-    margin-top: 20px;
-}
-
-button:hover {
-    background-color: #d32f2f;
-}
-body {
-    background-image: url('https://www.pcworld.com/wp-content/uploads/2024/03/shutterstock_2268386621.jpg?quality=50&strip=all');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Optional: Adds some transparency to the container */
-    border-radius: 8px;
-}
-
-.form-container {
-    padding: 20px;
-    margin: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
